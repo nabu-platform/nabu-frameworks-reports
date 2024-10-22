@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.frameworks.reports.crud.dataSource</webFragments>
+    <webFragments>nabu.frameworks.reports.crud.dataSourceResult</webFragments>
+    <webFragments>nabu.frameworks.reports.crud.report</webFragments>
+    <webFragments>nabu.frameworks.reports.crud.reportSource</webFragments>
+    <webFragments>nabu.frameworks.reports.manage.rest.report.get</webFragments>
+</webModule>

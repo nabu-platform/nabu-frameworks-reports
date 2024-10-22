@@ -1,0 +1,4 @@
+<structure name="reportLine">
+    <field name="rowNumber" type="java.lang.Long"/>
+    <structure definition="nabu.frameworks.reports.manage.rest.report.reportSource" maxOccurs="unbounded" minOccurs="0" name="sources"/>
+</structure>

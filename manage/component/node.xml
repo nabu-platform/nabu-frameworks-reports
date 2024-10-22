@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2024-10-21T16:03:27.089+02:00" lastModified="2024-10-22T09:23:30.057+02:00" leaf="true" version="7">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.crud.dataSource</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult</references>
+    <references>nabu.frameworks.reports.crud.report</references>
+    <references>nabu.frameworks.reports.crud.reportSource</references>
+    <references>nabu.frameworks.reports.manage.rest.report.get</references>
+</node>

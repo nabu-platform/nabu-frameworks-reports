@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2024-10-22T09:21:21.814+02:00" lastModified="2024-10-22T09:34:01.642+02:00" leaf="true" version="17">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.types.output</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.services.list</references>
+    <references>nabu.frameworks.reports.crud.reportSource.services.list</references>
+    <references>nabu.frameworks.reports.manage.rest.report.report</references>
+    <references>nabu.frameworks.reports.manage.rest.report.reportSource</references>
+    <references>nabu.frameworks.reports.crud.report.services.get</references>
+    <references>nabu.utils.String.split</references>
+    <references>nabu.utils.List.group</references>
+</node>

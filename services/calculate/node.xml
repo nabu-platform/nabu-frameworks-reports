@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2024-10-22T08:57:32.351+02:00" leaf="true" version="94">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.types.output</references>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>nabu.frameworks.reports.utils.calculate</references>
+    <references>nabu.utils.types.TypeDescription</references>
+    <references>nabu.frameworks.reports.types.normalized</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
+    <references>java.util.UUID</references>
+    <references>nabu.utils.types.TypeInspection</references>
+    <references>nabu.frameworks.reports.crud.dataSource.services.get</references>
+    <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
+</node>

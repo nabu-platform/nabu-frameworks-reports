@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-19T14:49:27.821+02:00" lastModified="2024-10-22T09:31:27.641+02:00" leaf="true" version="22">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>java.util.UUID</references>
+    <references>java.util.Date</references>
+    <references>java.lang.String</references>
+    <references>java.math.BigDecimal</references>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>nabu.frameworks.reports.database.types.dataSource</references>
+    <references>java.lang.Boolean</references>
+</node>

@@ -1,0 +1,3 @@
+<structure name="report" superType="nabu.frameworks.reports.database.types.report">
+    <structure definition="nabu.frameworks.reports.manage.rest.report.reportLine" maxOccurs="unbounded" minOccurs="0" name="lines"/>
+</structure>

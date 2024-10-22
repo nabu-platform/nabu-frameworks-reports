@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2024-10-22T09:30:02.527+02:00" leaf="true" version="109">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.specs.calculate</references>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.services.list</references>
+    <references>nabu.utils.Server.uuid</references>
+    <references>nabu.utils.types.TypeDescription</references>
+    <references>nabu.frameworks.reports.types.normalized</references>
+    <references>nabu.frameworks.reports.utils.unmarshal</references>
+    <references>nabu.services.glue.Services.evaluate</references>
+    <references>nabu.utils.types.TypeInspection</references>
+    <references>java.lang.Integer</references>
+    <references>nabu.utils.BigMath.sumDecimals</references>
+    <references>nabu.utils.List.getAll</references>
+    <references>nabu.utils.Math.average</references>
+    <references>nabu.utils.Math.maximum</references>
+    <references>nabu.protocols.jdbc.pool.Services.execute</references>
+    <references>nabu.utils.List.reverse</references>
+    <references>java.lang.String</references>
+    <references>nabu.frameworks.reports.database.types.dataSource</references>
+    <references>nabu.utils.reflection.Type.get</references>
+    <references>nabu.utils.reflection.properties.unmarshalServiceInput</references>
+    <references>nabu.utils.Math.minimum</references>
+    <references>nabu.utils.Date.now</references>
+    <references>nabu.utils.List.addAll</references>
+    <references>nabu.frameworks.reports.utils.marshal</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.types.output</references>
+    <references>nabu.utils.reflection.Type.inspect</references>
+    <references>nabu.utils.List.size</references>
+    <references>nabu.utils.Object.first</references>
+    <references>java.lang.Object</references>
+    <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
+</node>

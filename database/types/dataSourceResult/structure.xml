@@ -1,0 +1,12 @@
+<structure collectionName="dataSourceResults" name="dataSourceResult">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field name="created" timezone="UTC" type="java.util.Date"/>
+    <field comment="The raw data we got from the source" name="data" type="java.lang.String"/>
+    <field comment="The id of the data type itself. For anonymous result sets (e.g. random queries) this is not available." minOccurs="0" name="dataType" type="java.lang.String"/>
+    <field comment="An aggregation that can be used for easy conclusions" minOccurs="0" name="aggregate" type="java.math.BigDecimal"/>
+    <field comment="The delta against the previous aggregate" minOccurs="0" name="aggregateDelta" type="java.math.BigDecimal"/>
+    <field comment="Linkback to the previous point against which the aggregate was offset" foreignKey="nabu.frameworks.reports.database.types.dataSourceResult:id" minOccurs="0" name="previousResultId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field foreignKey="nabu.frameworks.reports.database.types.dataSource:id" name="dataSourceId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="What type the result is, e.g. &quot;fact&quot;, &quot;list&quot; (normalized), &quot;table&quot; (non-normalized list of complex), &quot;points&quot; (non normalized list of simple), &quot;record&quot; (for singular complex type)" name="resultType" type="java.lang.String"/>
+    <field name="active" type="java.lang.Boolean"/>
+</structure>

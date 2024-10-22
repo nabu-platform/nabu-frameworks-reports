@@ -1,0 +1,15 @@
+<structure name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <field maxOccurs="unbounded" name="connectionIds" type="java.lang.String"/>
+    <field minOccurs="0" name="nearestSchedule" timezone="UTC" type="java.util.Date"/>
+    <field name="interrupted" type="java.lang.Boolean"/>
+    <field name="amountOfMs" type="java.lang.Double"/>
+    <field minOccurs="0" name="now" type="java.util.Date"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" maxOccurs="unbounded" minOccurs="0" name="dataSourcesToRun" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" maxOccurs="unbounded" minOccurs="0" name="unscheduled" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" maxOccurs="unbounded" minOccurs="0" name="dataSourcesInFuture" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.database.types.dataSourceResult" maxOccurs="unbounded" minOccurs="0" name="runResults"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" minOccurs="0" name="nearestDataSource" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <field name="locked" type="java.lang.Boolean"/>
+</structure>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-22T08:28:13.074+02:00" lastModified="2024-10-22T09:35:23.506+02:00" leaf="true" version="52">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.tasks.services.schedule.nextPlain</references>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>java.lang.Double</references>
+    <references>nabu.frameworks.reports.utils.calculate</references>
+    <references>java.util.Date</references>
+    <references>nabu.utils.Date.now</references>
+    <references>nabu.frameworks.reports.crud.dataSource.services.list</references>
+    <references>nabu.utils.List.minimum</references>
+    <references>nabu.frameworks.reports.utils.deactivateResults</references>
+    <references>nabu.utils.List.addAll</references>
+    <references>nabu.services.jdbc.Services.update</references>
+    <references>nabu.services.jdbc.Services.insert</references>
+    <references>nabu.utils.Date.diff</references>
+    <references>nabu.frameworks.reports.utils.getSupportedConnections</references>
+    <references>nabu.utils.Lock.tryLock</references>
+    <references>nabu.utils.Runtime.interrupted</references>
+    <references>java.lang.Boolean</references>
+    <references>nabu.utils.Object.last</references>
+    <references>java.lang.String</references>
+    <references>nabu.utils.Date.increment</references>
+    <references>nabu.utils.Server.sleep</references>
+    <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
+</node>

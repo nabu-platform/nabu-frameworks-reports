@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <x>621</x>
+        <y>164</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <x>1061</x>
+        <y>170</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <x>618</x>
+        <y>553</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <x>1061</x>
+        <y>555</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.reports.database.types.report</type>
+        <x>107</x>
+        <y>491</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.reports.database.types.reportSource</type>
+        <x>603</x>
+        <y>595</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.reports.database.types.dataSource</type>
+        <x>125</x>
+        <y>27</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.reports.database.types.dataSourceResult</type>
+        <x>703</x>
+        <y>43</y>
+    </entries>
+</dataModel>

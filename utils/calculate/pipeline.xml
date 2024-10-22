@@ -1,0 +1,20 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field minOccurs="0" name="connectionId" type="java.lang.String"/>
+        <structure collectionName="dataSources" definition="nabu.frameworks.reports.database.types.dataSource" name="dataSource"/>
+    </structure>
+    <structure name="output">
+        <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.database.types.dataSourceResult" minOccurs="0" name="runResult"/>
+    </structure>
+    <structure definition="nabu.utils.types.TypeDescription" minOccurs="0" name="description"/>
+    <structure definition="nabu.utils.types.TypeInspection" minOccurs="0" name="inspection"/>
+    <structure definition="java.lang.Object" maxOccurs="unbounded" name="results"/>
+    <structure definition="nabu.frameworks.reports.types.normalized" maxOccurs="unbounded" minOccurs="0" name="normalized"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" name="source" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.database.types.dataSourceResult" name="runResult"/>
+    <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.crud.dataSourceResult.types.output" enricher="nabu.frameworks.reports.crud.dataSourceResult.services.list" minOccurs="0" name="lastRun" persister="nabu.frameworks.reports.crud.dataSourceResult.batch.updateAll"/>
+    <structure definition="java.lang.Object" maxOccurs="unbounded" name="accumulated"/>
+    <structure definition="java.lang.Object" minOccurs="0" name="result"/>
+    <field minOccurs="0" name="amountOfRecords" type="java.lang.Integer"/>
+    <field minOccurs="0" name="amountOfRecordsToAdd" type="java.lang.Integer"/>
+</structure>

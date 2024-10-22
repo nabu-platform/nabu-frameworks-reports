@@ -1,0 +1,6 @@
+<structure interface="nabu.frameworks.reports.manage.rest.report.get:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.frameworks.reports.manage.rest.report.reportSource" maxOccurs="unbounded" minOccurs="0" name="sources"/>
+    <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.crud.dataSourceResult.types.output" enricher="nabu.frameworks.reports.crud.dataSourceResult.services.list" maxOccurs="unbounded" minOccurs="0" name="results" persister="nabu.frameworks.reports.crud.dataSourceResult.batch.updateAll"/>
+</structure>

@@ -1,0 +1,5 @@
+<structure name="normalized">
+    <field minOccurs="0" name="value" type="java.math.BigDecimal"/>
+    <field minOccurs="0" name="label" type="java.lang.String"/>
+    <field name="index" type="java.lang.Long"/>
+</structure>

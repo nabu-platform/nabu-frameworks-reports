@@ -1,0 +1,3 @@
+<structure name="reportSource" superType="nabu.frameworks.reports.database.types.reportSource">
+    <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.database.types.dataSourceResult" minOccurs="0" name="result"/>
+</structure>

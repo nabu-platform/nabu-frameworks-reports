@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-22T09:21:33.320+02:00" lastModified="2024-10-22T09:24:27.458+02:00" leaf="true" version="4">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.database.types.report</references>
+    <references>nabu.frameworks.reports.manage.rest.report.reportLine</references>
+</node>

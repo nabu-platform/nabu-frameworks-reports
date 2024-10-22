@@ -1,0 +1,5 @@
+object ?= null
+boolean simple ?= false
+
+@return
+string content = when(simple, object, json.stringify(object, pretty: true))
