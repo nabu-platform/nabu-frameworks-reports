@@ -904,12 +904,6 @@
 					lineNumber="25">
 			</steps>
 		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Break"
-				disabled="false"
-				id="47c108bb257c465483ff54c257f6a43b"
-				lineNumber="26">
-			<count>1</count>
-		</steps>
 		<query>true</query>
 	</steps>
 </sequence>
