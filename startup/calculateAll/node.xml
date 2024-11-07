@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-22T08:28:13.074+02:00" lastModified="2024-10-22T09:35:23.506+02:00" leaf="true" version="52">
-    <environmentId>apollo</environmentId>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-22T08:28:13.074+02:00" lastModified="2024-11-07T15:19:35.938+01:00" leaf="true" version="54">
+    <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
