@@ -143,7 +143,7 @@
 			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 					disabled="false"
 					id="bfea270132ab4811a2b253993f69fdea"
-					serviceId="nabu.utils.reflection.properties.unmarshalServiceInput"
+					serviceId="nabu.data.json.properties.unmarshalServiceInput"
 					resultName="result1f406c8908554e5caaff903b7538ab23"
 					temporaryMapping="true"
 					x="86"

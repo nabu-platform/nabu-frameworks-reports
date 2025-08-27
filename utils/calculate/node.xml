@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2024-10-22T09:30:02.527+02:00" leaf="true" version="109">
-    <environmentId>apollo</environmentId>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2025-08-27T12:08:02.625+02:00" leaf="true" version="111">
+    <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
@@ -23,7 +23,6 @@
     <references>java.lang.String</references>
     <references>nabu.frameworks.reports.database.types.dataSource</references>
     <references>nabu.utils.reflection.Type.get</references>
-    <references>nabu.utils.reflection.properties.unmarshalServiceInput</references>
     <references>nabu.utils.Math.minimum</references>
     <references>nabu.utils.Date.now</references>
     <references>nabu.utils.List.addAll</references>
@@ -33,5 +32,6 @@
     <references>nabu.utils.List.size</references>
     <references>nabu.utils.Object.first</references>
     <references>java.lang.Object</references>
+    <references>nabu.data.json.properties.unmarshalServiceInput</references>
     <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
 </node>
