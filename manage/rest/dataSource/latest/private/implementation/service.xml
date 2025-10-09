@@ -1,0 +1,81 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="fb865fd0cdc44a5496e9214ff17d5c02"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="2fb2c159672b49cc86efdc830e52de14"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="e8a6b364f40043e6bda7e6c68de76f95"
+				serviceId="nabu.frameworks.reports.crud.dataSource.services.get"
+				resultName="resultdabc3c3ad99a4bf0a47bb1145105c4e4"
+				temporaryMapping="true"
+				x="220"
+				y="87"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="454bf95bd2b546779eee18509e6a5684"
+					fixedValue="false">
+				<from>input/path/dataSourceId</from>
+				<to>id</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="58ec7541966c43089f07b7c8958342d9"
+				fixedValue="false">
+			<from>resultdabc3c3ad99a4bf0a47bb1145105c4e4/result</from>
+			<to>dataSource</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Throw"
+			disabled="false"
+			id="b8aa9c69f94b4e14aa5354503dd9bace"
+			label="!dataSource"
+			lineNumber="3"
+			code="404"
+			whitelist="false" xsi:nil="true"/>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="bb2a363db18e4f4ca7fe423a120c4005"
+			lineNumber="4">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="5aa04ad208874db2babd7e705e4e9d96"
+				serviceId="nabu.frameworks.reports.crud.dataSourceResult.services.list"
+				resultName="resultb9b63cf5ed984b81b978ee529e0ee31a"
+				temporaryMapping="true"
+				x="255"
+				y="90"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="982533e36679411db0aff2c0811a1f2e"
+					fixedValue="false">
+				<from>dataSource/id</from>
+				<to>filter/dataSourceId[0]</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="623dd6035bb44babafeff46426c6227f"
+					fixedValue="true">
+				<from>true</from>
+				<to>filter/active</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="d589e09947394ea4965c614e352bd487"
+				fixedValue="false">
+			<from>resultb9b63cf5ed984b81b978ee529e0ee31a/results[0]</from>
+			<to>output/content</to>
+		</steps>
+	</steps>
+</sequence>

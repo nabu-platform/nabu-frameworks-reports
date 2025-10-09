@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-21T17:02:53.042+02:00" lastModified="2025-08-26T12:21:59.458+02:00" leaf="true" version="7">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-21T17:02:53.042+02:00" lastModified="2025-09-16T14:12:21.037+02:00" leaf="true" version="9">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>

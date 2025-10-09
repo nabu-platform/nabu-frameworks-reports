@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2025-09-22T11:40:12.416+02:00" lastModified="2025-09-22T11:41:11.250+02:00" leaf="true" version="10">
+    <environmentId>ares</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>nabu.frameworks.reports.services.calculate</references>
+</node>

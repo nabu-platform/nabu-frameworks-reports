@@ -5,4 +5,7 @@
     <webFragments>nabu.frameworks.reports.crud.report</webFragments>
     <webFragments>nabu.frameworks.reports.crud.reportSource</webFragments>
     <webFragments>nabu.frameworks.reports.manage.rest.report.get</webFragments>
+    <webFragments>nabu.frameworks.reports.manage.rest.dataSource.listConnections</webFragments>
+    <webFragments>nabu.frameworks.reports.manage.rest.dataSource.latest</webFragments>
+    <webFragments>nabu.frameworks.reports.manage.rest.dataSource.recalculate</webFragments>
 </webModule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2025-09-15T10:09:23.909+02:00" lastModified="2025-09-15T10:12:02.690+02:00" leaf="true" version="10">
+    <environmentId>ares</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.services.list</references>
+    <references>java.util.UUID</references>
+    <references>nabu.frameworks.reports.crud.dataSource.services.get</references>
+    <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
+</node>

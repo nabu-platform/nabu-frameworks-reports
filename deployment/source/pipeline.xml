@@ -1,0 +1,11 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="connectionId" type="java.lang.String"/>
+    </structure>
+    <structure name="output">
+        <field name="connectionId" type="java.lang.String"/>
+        <structure collectionName="dataSources" definition="nabu.frameworks.reports.database.types.dataSource" maxOccurs="unbounded" minOccurs="0" name="dataSources"/>
+        <structure collectionName="reports" definition="nabu.frameworks.reports.database.types.report" maxOccurs="unbounded" minOccurs="0" name="reports"/>
+        <structure collectionName="reportSources" definition="nabu.frameworks.reports.database.types.reportSource" maxOccurs="unbounded" name="reportSources"/>
+    </structure>
+</structure>

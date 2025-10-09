@@ -1,6 +1,7 @@
 <structure collectionName="reports" name="report">
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field comment="A logical name used to refer to this report" name="name" type="java.lang.String"/>
     <field name="title" type="java.lang.String"/>
     <field minOccurs="0" name="description" type="java.lang.String"/>
-    <field name="active" type="java.lang.Boolean"/>
+    <field comment="Is managed per environment" name="active" type="java.lang.Boolean"/>
 </structure>

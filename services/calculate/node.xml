@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2025-08-26T12:21:59.464+02:00" leaf="true" version="95">
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-21T15:57:36.734+02:00" lastModified="2025-09-16T10:05:00.957+02:00" leaf="true" version="105">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
-    <references>nabu.frameworks.reports.crud.dataSourceResult.types.output</references>
     <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
     <references>nabu.frameworks.reports.utils.calculate</references>
     <references>nabu.utils.types.TypeDescription</references>
     <references>nabu.frameworks.reports.types.normalized</references>
-    <references>java.lang.Object</references>
-    <references>java.lang.String</references>
     <references>java.util.UUID</references>
     <references>nabu.utils.types.TypeInspection</references>
+    <references>nabu.frameworks.reports.utils.deactivateResults</references>
     <references>nabu.frameworks.reports.crud.dataSource.services.get</references>
+    <references>nabu.services.jdbc.Services.insert</references>
+    <references>nabu.frameworks.reports.crud.dataSourceResult.types.output</references>
+    <references>java.lang.Boolean</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
     <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
 </node>

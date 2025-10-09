@@ -8,6 +8,14 @@
     <createRole>$user</createRole>
     <deletePermission>report.manage</deletePermission>
     <deleteRole>$user</deleteRole>
+    <filters>
+        <caseInsensitive>false</caseInsensitive>
+        <key>active</key>
+        <operator>=</operator>
+        <or>false</or>
+        <input>true</input>
+        <vary>false</vary>
+    </filters>
     <getPermission>report.list</getPermission>
     <hooks>false</hooks>
     <listPermission>report.list</listPermission>

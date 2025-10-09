@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-22T09:21:33.320+02:00" lastModified="2025-08-26T12:21:59.473+02:00" leaf="true" version="5">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-22T09:21:33.320+02:00" lastModified="2025-09-15T17:03:50.269+02:00" leaf="true" version="6">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>nabu.frameworks.reports.database.types.report</references>
-    <references>nabu.frameworks.reports.manage.rest.report.reportLine</references>
+    <references>nabu.frameworks.reports.manage.rest.report.reportSource</references>
 </node>

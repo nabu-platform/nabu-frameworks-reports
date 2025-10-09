@@ -16,6 +16,10 @@
         <input>true</input>
         <vary>false</vary>
     </filters>
+    <foreignFields>
+        <foreignName>dataSourceId:name</foreignName>
+        <localName>dataSourceName</localName>
+    </foreignFields>
     <getPermission>report.list</getPermission>
     <hooks>false</hooks>
     <listPermission>report.list</listPermission>

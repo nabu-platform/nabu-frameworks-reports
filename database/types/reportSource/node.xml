@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-19T14:57:58.329+02:00" lastModified="2025-08-26T12:21:59.501+02:00" leaf="true" version="14">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2024-10-19T14:57:58.329+02:00" lastModified="2025-09-15T15:59:15.810+02:00" leaf="true" version="20">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
@@ -7,7 +7,8 @@
     <references>java.util.UUID</references>
     <references>nabu.frameworks.reports.database.types.report</references>
     <references>nabu.frameworks.reports.database.types.dataSource</references>
-    <references>java.lang.Long</references>
     <references>java.lang.String</references>
-    <references>java.lang.Boolean</references>
+    <references>java.lang.Long</references>
+    <references>java.lang.Integer</references>
+    <references>java.lang.Double</references>
 </node>

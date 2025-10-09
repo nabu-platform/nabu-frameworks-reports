@@ -70,42 +70,10 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="5ac41469751d4f5885043583f4033296"
-					mask="false"
-					optional="false"
-					fixedValue="false">
-				<from>resultdd719826001a444eb964795f3f16032d/parts</from>
-				<to>orderBy</to>
-			</steps>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="d745a2b835934c0f9d1b562411c5b698"
-				serviceId="nabu.utils.String.split"
-				resultName="resultdd719826001a444eb964795f3f16032d"
-				temporaryMapping="true"
-				x="62"
-				y="33"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="947f8875ebab489faf874a4c4a5400df"
-					mask="false"
-					optional="false"
+					id="b284d415e1a34323b80202a2c42cb0bb"
 					fixedValue="true">
-				<from>rowNumber,columNumber</from>
-				<to>string</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="4edd7f4220e041509a7a36934f6e6283"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>,</from>
-				<to>separator</to>
+				<from>orderNumber</from>
+				<to>orderBy[0]</to>
 			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
@@ -191,47 +159,16 @@
 		<query>sources</query>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			comment="Map output"
 			disabled="false"
-			id="639b7217820840699503ac818294709b"
+			id="79eaea81350b4624aeb86b86ff38828a"
 			lineNumber="9">
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="3831a5eef14847d484e1f9a41ba31526"
-				serviceId="nabu.utils.List.group"
-				resultName="resultdce8c610473a49c4b08babc1df570980"
-				temporaryMapping="true"
-				x="143"
-				y="84"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="800dc71e55c1476b8d055391f0738057"
-					mask="false"
-					optional="false"
-					fixedValue="false">
-				<from>sources</from>
-				<to>list</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="9a1d1371fce940989703fb3e844a97bc"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>nabu.frameworks.reports.manage.rest.report.reportLine</from>
-				<to>definition</to>
-			</steps>
-		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="b5469edffbf6431e91ee095c0d8cdffc"
-				mask="false"
-				optional="false"
+				id="d41251a9a74d47ac90208801bf3b9db5"
 				fixedValue="false">
-			<from>resultdce8c610473a49c4b08babc1df570980/response</from>
-			<to>output/content/lines</to>
+			<from>sources</from>
+			<to>output/content/sources</to>
 		</steps>
 	</steps>
 </sequence>

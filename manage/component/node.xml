@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2024-10-21T16:03:27.089+02:00" lastModified="2025-08-26T12:21:59.476+02:00" leaf="true" version="8">
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2024-10-21T16:03:27.089+02:00" lastModified="2025-09-22T11:41:18.027+02:00" leaf="true" version="11">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
@@ -9,4 +9,7 @@
     <references>nabu.frameworks.reports.crud.report</references>
     <references>nabu.frameworks.reports.crud.reportSource</references>
     <references>nabu.frameworks.reports.manage.rest.report.get</references>
+    <references>nabu.frameworks.reports.manage.rest.dataSource.listConnections</references>
+    <references>nabu.frameworks.reports.manage.rest.dataSource.latest</references>
+    <references>nabu.frameworks.reports.manage.rest.dataSource.recalculate</references>
 </node>

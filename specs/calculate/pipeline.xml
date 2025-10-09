@@ -3,6 +3,6 @@
         <structure definition="java.lang.Object" minOccurs="0" name="properties"/>
     </structure>
     <structure name="output">
-        <structure definition="java.lang.Object" minOccurs="0" name="result"/>
+        <structure definition="java.lang.Object" maxOccurs="unbounded" minOccurs="0" name="results"/>
     </structure>
 </structure>

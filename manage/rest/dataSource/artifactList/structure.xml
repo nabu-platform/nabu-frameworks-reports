@@ -1,0 +1,3 @@
+<structure name="artifactList">
+    <structure definition="nabu.frameworks.reports.manage.rest.dataSource.artifact" maxOccurs="unbounded" minOccurs="0" name="artifacts"/>
+</structure>

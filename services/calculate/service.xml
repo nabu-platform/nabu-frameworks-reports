@@ -90,4 +90,60 @@
 			<to>output/runResult</to>
 		</steps>
 	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
+			disabled="false"
+			id="c0802b5e32594133a17848dd6bdd0350"
+			label="input/store &amp;&amp; output/runResult"
+			lineNumber="4">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				comment="Deactivate existing"
+				disabled="false"
+				id="36215b51b50e427989c6fbbdbd33176d"
+				lineNumber="5">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+					disabled="false"
+					id="f66db81dfbfc4362aedae67f6fa301c4"
+					serviceId="nabu.frameworks.reports.utils.deactivateResults"
+					resultName="result233ce49eb5624908af0f5f8281efde47"
+					temporaryMapping="true"
+					x="188"
+					y="98"
+					invocationOrder="0"
+					asynchronous="false"
+					recache="false">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="32f2df5cf1844803895682fe7d0b5332"
+						fixedValue="false">
+					<from>input/dataSourceId</from>
+					<to>parameters[0]/dataSourceId[0]</to>
+				</steps>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				comment="Insert new"
+				disabled="false"
+				id="f3bbdab32fc9442880403f3687b9936e"
+				lineNumber="6">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+					disabled="false"
+					id="8213de71dd4b4229ba739d0c9b9167d0"
+					serviceId="nabu.services.jdbc.Services.insert"
+					resultName="resultfbe66dc30c7a4696a9413d91a0e2df2d"
+					temporaryMapping="true"
+					x="179"
+					y="99"
+					invocationOrder="0"
+					asynchronous="false"
+					recache="false">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="946a001e7d0946f98641adbf733a0af6"
+						fixedValue="false">
+					<from>output/runResult</from>
+					<to>instances[0]</to>
+				</steps>
+			</steps>
+		</steps>
+	</steps>
 </sequence>

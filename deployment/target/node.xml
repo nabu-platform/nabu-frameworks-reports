@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2025-09-18T14:14:42.473+02:00" lastModified="2025-09-19T08:54:03.495+02:00" leaf="true" version="16">
+    <environmentId>ares</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.reports.database.types.reportSource</references>
+    <references>nabu.services.jdbc.Services.merge</references>
+    <references>nabu.frameworks.reports.crud.dataSource.services.list</references>
+    <references>nabu.frameworks.reports.crud.reportSource.types.output</references>
+    <references>java.util.UUID</references>
+    <references>nabu.frameworks.reports.crud.report.types.output</references>
+    <references>nabu.frameworks.reports.database.types.report</references>
+    <references>nabu.services.jdbc.Services.delete</references>
+    <references>nabu.frameworks.reports.crud.report.services.list</references>
+    <references>nabu.frameworks.reports.crud.reportSource.services.list</references>
+    <references>java.lang.String</references>
+    <references>nabu.frameworks.reports.database.types.dataSource</references>
+    <references>nabu.frameworks.reports.crud.dataSource.types.output</references>
+</node>

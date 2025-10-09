@@ -14,7 +14,7 @@
     <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.database.types.dataSourceResult" name="runResult"/>
     <structure collectionName="dataSourceResults" definition="nabu.frameworks.reports.crud.dataSourceResult.types.output" enricher="nabu.frameworks.reports.crud.dataSourceResult.services.list" minOccurs="0" name="lastRun" persister="nabu.frameworks.reports.crud.dataSourceResult.batch.updateAll"/>
     <structure definition="java.lang.Object" maxOccurs="unbounded" name="accumulated"/>
-    <structure definition="java.lang.Object" minOccurs="0" name="result"/>
     <field minOccurs="0" name="amountOfRecords" type="java.lang.Integer"/>
     <field minOccurs="0" name="amountOfRecordsToAdd" type="java.lang.Integer"/>
+    <structure definition="nabu.frameworks.reports.types.normalized" maxOccurs="unbounded" minOccurs="0" name="accumulatedNormalized"/>
 </structure>

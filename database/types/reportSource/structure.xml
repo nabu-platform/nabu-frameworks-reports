@@ -2,9 +2,8 @@
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
     <field foreignKey="nabu.frameworks.reports.database.types.report:id" name="reportId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field foreignKey="nabu.frameworks.reports.database.types.dataSource:id" name="dataSourceId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
-    <field name="rowNumber" type="java.lang.Long"/>
-    <field name="columnNumber" type="java.lang.Long"/>
-    <field comment="fact, line, bar, table" name="visualisation" type="java.lang.String"/>
-    <field minOccurs="0" name="title" type="java.lang.String"/>
-    <field comment="Whether or not to show the aggregate conclusion" minOccurs="0" name="aggregate" type="java.lang.Boolean"/>
+    <field name="title" translatable="true" type="java.lang.String"/>
+    <field comment="The order in which it appears" name="orderNumber" type="java.lang.Long"/>
+    <field comment="Expressed in &quot;columns&quot;, assumes a column based layout, if left blank it will be 12" minOccurs="0" name="width" type="java.lang.Integer"/>
+    <field comment="The aspect ratio. If left blank, it will have no height limit" minOccurs="0" name="ratio" type="java.lang.Double"/>
 </structure>

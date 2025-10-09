@@ -23,8 +23,8 @@
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.frameworks.reports.database.types.report</type>
-        <x>107</x>
-        <y>491</y>
+        <x>103</x>
+        <y>624</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>

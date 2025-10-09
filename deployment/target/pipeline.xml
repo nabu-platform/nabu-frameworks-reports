@@ -1,0 +1,17 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="connectionId" type="java.lang.String"/>
+        <structure collectionName="reportSources" definition="nabu.frameworks.reports.database.types.reportSource" maxOccurs="unbounded" name="reportSources"/>
+        <structure collectionName="reports" definition="nabu.frameworks.reports.database.types.report" maxOccurs="unbounded" minOccurs="0" name="reports"/>
+        <structure collectionName="dataSources" definition="nabu.frameworks.reports.database.types.dataSource" maxOccurs="unbounded" minOccurs="0" name="dataSources"/>
+    </structure>
+    <structure name="output"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" maxOccurs="unbounded" minOccurs="0" name="existingDataSources" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="reports" definition="nabu.frameworks.reports.crud.report.types.output" enricher="nabu.frameworks.reports.crud.report.services.list" maxOccurs="unbounded" minOccurs="0" name="existingReports" persister="nabu.frameworks.reports.crud.report.batch.updateAll"/>
+    <structure collectionName="reportSources" definition="nabu.frameworks.reports.crud.reportSource.types.output" enricher="nabu.frameworks.reports.crud.reportSource.services.list" maxOccurs="unbounded" minOccurs="0" name="existingReportSources" persister="nabu.frameworks.reports.crud.reportSource.batch.updateAll"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" minOccurs="0" name="existingDataSource" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+    <structure collectionName="reports" definition="nabu.frameworks.reports.crud.report.types.output" enricher="nabu.frameworks.reports.crud.report.services.list" minOccurs="0" name="existingReport" persister="nabu.frameworks.reports.crud.report.batch.updateAll"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="managedReportIds" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="managedReportSourceIds" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <structure collectionName="reportSources" definition="nabu.frameworks.reports.crud.reportSource.types.output" enricher="nabu.frameworks.reports.crud.reportSource.services.list" maxOccurs="unbounded" minOccurs="0" name="reportSourcesToDelete" persister="nabu.frameworks.reports.crud.reportSource.batch.updateAll"/>
+</structure>

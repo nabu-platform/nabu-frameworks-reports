@@ -1,0 +1,5 @@
+<structure interface="$self:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="dataSources" definition="nabu.frameworks.reports.crud.dataSource.types.output" enricher="nabu.frameworks.reports.crud.dataSource.services.list" name="dataSource" persister="nabu.frameworks.reports.crud.dataSource.batch.updateAll"/>
+</structure>

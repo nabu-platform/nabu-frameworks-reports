@@ -1,0 +1,43 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="253d9ab8bb514dbd95abd19a92240b6d"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="442f785117e142d18988cd33c21fb5ff"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="b6ae3df612f74023b15bcb2c003bc56f"
+				serviceId="nabu.frameworks.reports.services.calculate"
+				resultName="result60fe23ba7d5f479c997838ef2cac2b82"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="35cc120aff144f1785c24483667e73f6"
+					fixedValue="false">
+				<from>input/path/dataSourceId</from>
+				<to>dataSourceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="86a3532762e548268aeab06d62978ad6"
+					fixedValue="true">
+				<from>true</from>
+				<to>store</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="40a854b48fb646948cd657144f599832"
+				fixedValue="false">
+			<from>result60fe23ba7d5f479c997838ef2cac2b82/runResult</from>
+			<to>output/content</to>
+		</steps>
+	</steps>
+</sequence>

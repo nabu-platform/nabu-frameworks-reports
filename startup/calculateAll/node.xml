@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-22T08:28:13.074+02:00" lastModified="2025-08-26T12:21:59.518+02:00" leaf="true" version="56">
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2024-10-22T08:28:13.074+02:00" lastModified="2025-09-16T08:55:56.885+02:00" leaf="true" version="61">
     <environmentId>ares</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
+    <references>nabu.utils.Runtime.summarizeException</references>
+    <references>nabu.utils.List.add</references>
     <references>nabu.frameworks.tasks.services.schedule.nextPlain</references>
     <references>nabu.frameworks.reports.database.types.dataSourceResult</references>
     <references>java.lang.Double</references>

@@ -1,0 +1,24 @@
+.is-report-item {
+	min-height: 100%;
+	flex-grow: 1;
+	svg {
+		height: 100%;
+		width: 100%;
+		.line {
+			fill: none;
+			stroke: red;
+			stroke-width: 2px;
+		}
+		.axis {
+			fill: none;
+			stroke: #666666;
+		}
+		.tick {
+			fill: none;
+			stroke: #333333;
+		}
+		.tick-label {
+			font-size: 12px;
+		}
+	}
+}
