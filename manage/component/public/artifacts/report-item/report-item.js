@@ -56,7 +56,7 @@ Vue.view("report-item", {
 	methods: {
 		draw: function() {
 			var options = {
-				visualisation: "bar",
+				visualisation: "line",
 				data: {
 					defaultValue: 0
 				},
@@ -129,12 +129,12 @@ Vue.view("report-item", {
 
 				// pixels per record
 				// note that the first point is drawn ON the y-axis and the last is drawn at the very end of the image, so we count 1 less
-				var ppr = availableWidth / (data.length - 1);
+				var ppr = data.length == 1 ? availableWidth : availableWidth / (data.length - 1);
 				
 				var range = max - min;
 				
 				// pixels per value
-				var ppv = availableHeight / range;
+				var ppv = range == 0 ? availableHeight : availableHeight / range;
 				
 				var y = function(value) {
 					// we are counting from the "top" which is considered the max value!
