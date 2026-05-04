@@ -1,0 +1,7 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<outputDefinition>nabu.frameworks.reports.database.types.dataSource</outputDefinition>
+	<sql>select *
+from ~data_sources
+where active = :active
+for update skip locked</sql>
+</jdbcService>
